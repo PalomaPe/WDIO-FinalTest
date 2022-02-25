@@ -19,11 +19,13 @@
     "chai": "^4.3.6",
     "chai-webdriverio": "^1.0.0",
     "chromedriver": "^98.0.1",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
     "wdio-chromedriver-service": "^7.2.8",
     "webdriverio": "^7.16.16"
   },
   "dependencies": {
-    "@wdio/cli": "^7.16.16",
-    "eslint": "^8.9.0"
+    "@wdio/cli": "^7.16.16"
   }
 }
