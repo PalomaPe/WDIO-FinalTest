@@ -21,7 +21,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        './tests/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -99,7 +99,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://academy.abstracta.us/',
+    baseUrl: 'http://automationpractice.com/index.php',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -209,8 +209,16 @@ exports.config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    // beforeTest: function (test, context) {
-    // },
+     beforeTest: function (test, context) {
+        const { addStep } = require('@wdio/allure-reporter').default
+        global.addStep = addStep
+
+        const chai = require('chai');
+        const chaiWebdriver = require('chai-webdriverio').default;
+        chai.use(chaiWebdriver(browser));
+        global.assert = chai.assert;
+        global.expect = chai.expect;
+    },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
