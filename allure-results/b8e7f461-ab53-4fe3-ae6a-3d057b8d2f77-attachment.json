@@ -1,0 +1,50 @@
+{
+  "actions": [
+    {
+      "type": "key",
+      "id": "keyboard",
+      "actions": [
+        {
+          "type": "keyDown",
+          "value": "5"
+        },
+        {
+          "type": "keyDown",
+          "value": "6"
+        },
+        {
+          "type": "keyDown",
+          "value": "7"
+        },
+        {
+          "type": "keyDown",
+          "value": "8"
+        },
+        {
+          "type": "keyDown",
+          "value": "9"
+        },
+        {
+          "type": "keyUp",
+          "value": "5"
+        },
+        {
+          "type": "keyUp",
+          "value": "6"
+        },
+        {
+          "type": "keyUp",
+          "value": "7"
+        },
+        {
+          "type": "keyUp",
+          "value": "8"
+        },
+        {
+          "type": "keyUp",
+          "value": "9"
+        }
+      ]
+    }
+  ]
+}

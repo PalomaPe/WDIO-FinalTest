@@ -4,6 +4,8 @@ export default class BasePage {
 
     //WebElements
     get customUserInfo() { return $(`.account`) }
+    get signOutButton() { return $(`.logout`) }
+
     
     //-------------------------------------------------------------------------------------------------------//
 
