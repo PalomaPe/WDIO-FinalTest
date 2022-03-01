@@ -4,7 +4,9 @@
   "description": "WebdriverIO - Javascript course, Final Test",
   "main": "index.js",
   "scripts": {
-    "test": "wdio ./wdio.conf.js"
+    "test": "wdio ./wdio.conf.js",
+    "eslint": "npm run lint",
+    "eslint fix": "npm run lint -- --fix"
   },
   "author": "Paloma Peirano",
   "license": "ISC",
