@@ -1,3 +1,4 @@
+var path = require('path');
 exports.config = {
     //
     // ====================
@@ -115,7 +116,22 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: [
+        'chromedriver',
+        [
+            'image-comparison',
+            {
+                baselineFolder: path.join(process.cwd(), './visual-regression/baseline/'),
+                formatImageName: '{tag}-{logName}-{width}x{height}',
+                screenshotPath: path.join(process.cwd(), './visual-regression/'),
+                savePerInstance: true,
+                autoSaveBaseline: true,
+                blockOutStatusBar: true,
+                blockOutToolBar: true,
+                // más opciones...
+            },
+        ],
+    ],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -210,14 +226,14 @@ exports.config = {
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
      beforeTest: function (test, context) {
-        // const { addStep } = require('@wdio/allure-reporter').default
-        // global.addStep = addStep
+        const { addStep } = require('@wdio/allure-reporter').default
+        global.addStep = addStep
 
-        //const chai = require('chai');
-        //const chaiWebdriver = require('chai-webdriverio').default;
-        // chai.use(chaiWebdriver(browser));
-        // global.assert = chai.assert;
-        // global.expect = chai.expect;
+        const chai = require('chai');
+        const chaiWebdriver = require('chai-webdriverio').default;
+        chai.use(chaiWebdriver(browser));
+        global.assert = chai.assert;
+        global.expect = chai.expect;
     },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling

@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "h5[itemprop='name'] > a.product-name"
-}

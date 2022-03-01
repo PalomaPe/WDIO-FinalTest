@@ -10,7 +10,12 @@ class HomePage extends BasePage {
 
     //-------------------------------------------------------------------------------------------------------//
 
+    /**
+     * Go tu a subcategory under the Women menu
+     * @param {String} elemento a clickear
+    */
     async goSubCategoryInWoman(category) {
+        addStep(`Go to subcategory in women: ${await category}`)
         let womanButton = await this.womanCategory
         await womanButton.moveTo();
         switch (category) {
