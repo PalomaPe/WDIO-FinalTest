@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1646018532023' stop='1646018540013'>
+    <name>Find products under their category: DRESSES or T-SHIRTS</name>
+    <title>Find products under their category: DRESSES or T-SHIRTS</title>
+    <test-cases>
+        <test-case start='1646018532024' status='broken' stop='1646018540012'>
+            <name>It should allow the user to find all products under their respective category</name>
+            <title>It should allow the user to find all products under their respective category</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.102'/>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.102'/>
+            </parameters>
+            <steps>
+                <step start='1646018532082' status='passed' stop='1646018536919'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='328aa54e-6cfd-4574-97d7-9387f31c3b73-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646018536920' status='passed' stop='1646018537341'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='57699350-f937-412a-a763-6cbb968e1120-attachment.png' type='image/png' size='948703'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646018537359' status='passed' stop='1646018539576'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='aa17103d-753d-4928-8250-604ab9a0a3d5-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646018539577' status='passed' stop='1646018540012'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='187a8e0e-2c21-4a5e-9c95-7b7fc826917a-attachment.png' type='image/png' size='948703'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'isDevTools' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'isDevTools' of undefined
+                    at findElement (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\node_modules\webdriverio\build\utils\index.js:217:15)
+                    at $ (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\node_modules\webdriverio\build\commands\browser\$.js:88:43)
+                    at HomePage.womanCategory (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\pages\/homePage.js:8:34)
+                    at HomePage.goSubCategoryInWoman (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\pages\/homePage.js:15:21)
+                    at Context.&lt;anonymous> (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\tests\/findProductByCategory.test.js:8:28)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

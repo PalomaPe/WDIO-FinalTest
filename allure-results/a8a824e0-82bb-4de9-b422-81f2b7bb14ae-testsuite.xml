@@ -1,0 +1,112 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1646093273035' stop='1646093385458'>
+    <name>Find all expected products under the category Women</name>
+    <title>Find all expected products under the category Women</title>
+    <test-cases>
+        <test-case start='1646093273036' status='failed' stop='1646093385446'>
+            <name>It should allow the user to find all products under their respective category</name>
+            <title>It should allow the user to find all products under their respective category</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.102'/>
+            </parameters>
+            <steps>
+                <step start='1646093273044' status='passed' stop='1646093277229'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8276beef-25d4-4fcf-ac85-d975697152b2-attachment.json' type='application/json' size='45'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646093277235' status='passed' stop='1646093277291'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ec708cb1-c5bb-4ee6-b4f7-9a1a76d6c423-attachment.json' type='application/json' size='65'/>
+                        <attachment title='Response' source='0ddf9b07-7586-41a8-9d34-0f2552a33a3e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646093277312' status='passed' stop='1646093277340'>
+                    <name>GET /session/:sessionId/element/afe03c0c-b2db-496c-a267-fce795ece042/rect</name>
+                    <title>GET /session/:sessionId/element/afe03c0c-b2db-496c-a267-fce795ece042/rect</title>
+                    <attachments>
+                        <attachment title='Response' source='bb4ccc33-edd1-46d6-8353-0734860c65eb-attachment.json' type='application/json' size='72'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646093277342' status='passed' stop='1646093277371'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='94848dec-52f2-4857-b59f-1c2c06818ad8-attachment.json' type='application/json' size='158'/>
+                        <attachment title='Response' source='a5963220-04a2-46ea-a9be-34a8fb185956-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646093277372' status='passed' stop='1646093277410'>
+                    <name>POST /session/:sessionId/actions</name>
+                    <title>POST /session/:sessionId/actions</title>
+                    <attachments>
+                        <attachment title='Request' source='4930afbe-6b5d-4448-b8ad-3895d450d8f0-attachment.json' type='application/json' size='288'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646093277412' status='passed' stop='1646093277425'>
+                    <name>DELETE /session/:sessionId/actions</name>
+                    <title>DELETE /session/:sessionId/actions</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1646093277432' status='passed' stop='1646093277467'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='fed6f597-fd36-4eac-858a-15f0ee95da9d-attachment.json' type='application/json' size='8337'/>
+                        <attachment title='Response' source='94eb6f94-cb55-463c-9d5c-8bd3d4b54c94-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646093277468' status='passed' stop='1646093277540'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='0fce8d70-b8c3-449f-86f8-aae9a36d9c64-attachment.json' type='application/json' size='5649'/>
+                        <attachment title='Response' source='73a66ed0-49c4-465d-a874-b3ae7113abb6-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646093277544' status='passed' stop='1646093278933'>
+                    <name>POST /session/:sessionId/element/afe03c0c-b2db-496c-a267-fce795ece042/click</name>
+                    <title>POST /session/:sessionId/element/afe03c0c-b2db-496c-a267-fce795ece042/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1646093278937' status='passed' stop='1646093278971'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='5e523f51-0575-425b-89f7-16ec4df45640-attachment.json' type='application/json' size='101'/>
+                        <attachment title='Response' source='afe0c3ad-0b1d-41dc-b488-d70375aafb1f-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "Find all expected products under the category Women It should allow the user to find all products under their respective category" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\tests\findAllProducts.test.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "Find all expected products under the category Women It should allow the user to find all products under their respective category" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\tests\findAllProducts.test.js)
+                    at createTimeoutError (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\node_modules\mocha\lib\errors.js:498:15)
+                    at Test.Runnable._timeoutError (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\node_modules\mocha\lib\runnable.js:431:10)
+                    at done (C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\node_modules\mocha\lib\runnable.js:308:18)
+                    at C:\Users\Abstracta\Documents\WebdriverIO-FinalTest-AA\node_modules\mocha\lib\runnable.js:371:11
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
